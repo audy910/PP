@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class names
@@ -7,19 +8,21 @@ public class names
         String first, last, full;
         int firstLength, lastLength, fullLength;
         
-        Scanner keyboard = new Scanner (Syystem.in);
-        System.out.print("Enter first name \n then last name: ");
-        first = keyboard.nextln();
-        last = keyboard.nextln();
+        Scanner keyboard = new Scanner (System.in);
+        System.out.println("Enter first name \n then last name: ");
+        first = keyboard.nextLine();
+        last = keyboard.nextLine();
         full = first + last;
         
         firstLength = first.length();
         lastLength = last.length();
         fullLength = full.length();
         
-        System.out.print(first + " = " first.length() + "letters")        
-        System.out.print(last + " = " last.length() + "letters");
-        System.out.print(full + " = " + full.length() + "letters" );
+        System.out.print(first + " = " + firstLength + " letters ") ;       
+        System.out.print(last + " = " + lastLength + " letters ");
+        System.out.print(full + " = " + fullLength + " letters  \n" );
+        
+        System.out.println(full.toUpperCase());
         
         
         System.out.println("audrey");
