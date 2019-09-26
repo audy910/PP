@@ -1,0 +1,22 @@
+import java.util.*;
+import java.lang.Math;
+
+public class coordinates {
+    public static void main(String args[]) {
+      double x1, y1, x2, y2, d, pt1, pt2;
+      Scanner keyboard = new Scanner(System.in);
+      
+      System.out.println("enter the first x and y values then enter the second x and y values \n seperated by spaces ");
+      x1 = keyboard.nextInt();
+      y1 = keyboard.nextInt();
+      x2 = keyboard.nextInt();
+      y2 = keyboard.nextInt();
+      
+      pt1 = Math.pow(x2-x1, 2) ;
+      pt2 = Math.pow(y2-y1, 2);
+      d = Math.sqrt(pt1 + pt2);
+      System.out.printf("%.2f%n", d);
+
+      System.out.println("\nAudrey");
+    }
+}
