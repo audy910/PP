@@ -1,21 +1,21 @@
 import java.util.*;
 import java.lang.Math;
 
-public class coordinates {
+public class  sphereStats{
     public static void main(String args[]) {
-      double x1, y1, x2, y2, d, pt1, pt2;
+      int r;
+      double sa, volume;
       Scanner keyboard = new Scanner(System.in);
       
-      System.out.println("enter the first x and y values then enter the second x and y values \n seperated by spaces ");
-      x1 = keyboard.nextInt();
-      y1 = keyboard.nextInt();
-      x2 = keyboard.nextInt();
-      y2 = keyboard.nextInt();
+      System.out.println("enter the radius: ");;
+      r = keyboard.nextInt();
       
-      pt1 = Math.pow(x2-x1, 2) ;
-      pt2 = Math.pow(y2-y1, 2);
-      d = Math.sqrt(pt1 + pt2);
-      System.out.printf("%.2f%n", d);
+      volume = (4 * Math.PI * Math.pow(r, 3))/3 ;
+      sa = Math.pow(r, 2) * Math.PI * 4;
+      
+      System.out.printf("The volume is: %.2f%n", volume); 
+      System.out.printf("\nThe Surface Area is: %.2f%n", sa);
+      
 
       System.out.println("\nAudrey");
     }
